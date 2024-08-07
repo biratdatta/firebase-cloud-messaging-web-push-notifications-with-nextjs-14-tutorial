@@ -3,13 +3,13 @@ import { getMessaging, getToken, isSupported } from "firebase/messaging";
 
 // Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-  apiKey: null,
-  authDomain: null,
-  projectId: null,
-  storageBucket: null,
-  messagingSenderId: null,
-  appId: null,
-  measurementId: null,
+  apiKey: "AIzaSyC4YF4PIioU42K7mIuBqpcE9takRNICgXM",
+  authDomain: "samagra-fcm.firebaseapp.com",
+  projectId: "samagra-fcm",
+  storageBucket: "samagra-fcm.appspot.com",
+  messagingSenderId: "666184174787",
+  appId: "1:666184174787:web:e6fcb9ca1fca7503e92676",
+  measurementId: "G-Y0V87C9GF3"
 };
 
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
