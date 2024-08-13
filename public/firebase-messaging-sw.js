@@ -21,12 +21,12 @@ const messaging = firebase.messaging();
 // Handle background messages
 messaging.onBackgroundMessage((payload) => {
   console.log("[firebase-messaging-sw.js] Received background message", payload);
-
   const link = payload.fcmOptions?.link || payload.data?.link;
   const notificationTitle = payload.notification.title;
   const notificationOptions = {
     body: payload.notification.body,
     icon: "./logo.png",
+    image: payload.notification.image,
     data: { url: link },
   };
 
